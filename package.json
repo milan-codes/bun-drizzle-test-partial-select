@@ -1,0 +1,23 @@
+{
+  "name": "bun-drizzle-test",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run --watch index.ts",
+    "push": "drizzle-kit push:pg",
+    "seed": "bun run seed.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.20.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "drizzle-orm": "^0.29.3",
+    "postgres": "^3.4.3"
+  }
+}
